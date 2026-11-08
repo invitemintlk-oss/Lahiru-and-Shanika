@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ChevronDown } from 'lucide-react';
-import { getGuestFromUrl } from '../weddingConfig';
+import { WEDDING, getGuestFromUrl } from '../weddingConfig';
 
 export const HeroContent: React.FC = () => {
   const guestNameString = getGuestFromUrl().displayName;
-  const dateText = "Monday, December 14, 2026";
+  const dateText = WEDDING.dateHero;
 
   return (
     <section aria-label="Hero" className="relative w-full h-[100dvh] overflow-hidden flex items-center justify-center">
@@ -64,7 +64,7 @@ export const HeroContent: React.FC = () => {
           transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
         >
           <h1 className="text-6xl sm:text-7xl md:text-8xl font-display text-[#1F3D2B] leading-tight" style={{ fontFamily: "'Great Vibes', cursive" }}>
-            Tashini
+            {WEDDING.groomName}
           </h1>
           
           <div className="my-1 sm:my-3 text-[#1F3D2B] opacity-90">
@@ -72,7 +72,7 @@ export const HeroContent: React.FC = () => {
           </div>
 
           <h1 className="text-6xl sm:text-7xl md:text-8xl font-display text-[#1F3D2B] leading-tight" style={{ fontFamily: "'Great Vibes', cursive" }}>
-            Ishan
+            {WEDDING.brideName}
           </h1>
           
           <p className="text-sm sm:text-lg md:text-xl font-sans tracking-[0.1em] sm:tracking-[0.15em] text-[#1F3D2B] uppercase mt-12 sm:mt-16">

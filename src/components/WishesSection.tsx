@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Heart } from 'lucide-react';
 import { submitToGoogleSheet } from '../googleSheets';
-import { getGuestFromUrl } from '../weddingConfig';
+import { COUPLE_NAMES, getGuestFromUrl } from '../weddingConfig';
 import { LotusOrnament } from './LotusOrnament';
 
 const MAX_WISH = 500;
@@ -61,7 +61,7 @@ export const WishesSection: React.FC = () => {
             Send Your Wishes
           </h2>
           <p className="text-[11px] md:text-sm text-[#1F3D2B]/80 font-sans tracking-[0.2em] uppercase max-w-xl px-4 leading-relaxed">
-            Leave a blessing or a few kind words for Tashini &amp; Ishan
+            Leave a blessing or a few kind words for {COUPLE_NAMES}
           </p>
         </motion.div>
 

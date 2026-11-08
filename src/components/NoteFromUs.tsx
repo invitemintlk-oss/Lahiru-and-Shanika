@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Heart, Sparkles } from 'lucide-react';
+import { COUPLE_NAMES } from '../weddingConfig';
 
 export const NoteFromUs: React.FC = () => {
   return (
@@ -48,7 +49,7 @@ export const NoteFromUs: React.FC = () => {
                 With love always
               </p>
               <p className="font-display text-[#B5294E] text-4xl md:text-5xl" style={{ fontFamily: "'Great Vibes', cursive" }}>
-                Tashini &amp; Ishan
+                {COUPLE_NAMES}
               </p>
             </div>
           </div>

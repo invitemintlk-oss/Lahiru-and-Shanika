@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Users, Heart, PenLine } from 'lucide-react';
+import { Users, Church, PenLine } from 'lucide-react';
 import { LotusOrnament } from './LotusOrnament';
 
 const events = [
   { time: '8:30 AM', title: 'Guests Arrival', icon: Users, desc: 'Welcoming our loved ones' },
-  { time: '9:16 AM', title: 'Poruwa Ceremony', icon: Heart, desc: 'The traditional Poruwa ceremony at the auspicious time' },
-  { time: '10:20 AM', title: 'Wedding Registration', icon: PenLine, desc: 'Signing of the marriage register' },
+  { time: '9:00 AM', title: 'Holy Matrimony', icon: Church, desc: 'Wedding ceremony at Holy Cross Church' },
+  { time: 'After the Mass', title: 'Signing of the Register', icon: PenLine, desc: 'Signing of the marriage register and blessings' },
 ];
 
 export const Timeline: React.FC = () => {

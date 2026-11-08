@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { WEDDING } from '../weddingConfig';
 
 interface IntroOverlayProps {
   onEnter: () => void;
@@ -25,7 +26,7 @@ export const IntroOverlay: React.FC<IntroOverlayProps> = ({ onEnter }) => {
         onEnded={onEnter}
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/Wedding_envelope_opens_with_light_202608040131.mp4" type="video/mp4" />
+        <source src={WEDDING.introVideo} type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-black/20 pointer-events-none"></div>
       

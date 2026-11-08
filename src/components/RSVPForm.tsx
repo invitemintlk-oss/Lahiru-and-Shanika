@@ -185,7 +185,7 @@ export const RSVPForm: React.FC = () => {
                   </button>
                   
                   <a 
-                    href="https://www.google.com/calendar/render?action=TEMPLATE&text=Tashini+%26+Ishan+Wedding&dates=20261214T030000Z/20261214T070000Z&details=We+are+excited+to+celebrate+with+you!&location=Dumindu+Hotel+%26+Banquet+Hall,+Kekanadura,+Matara&sf=true&output=xml" 
+                    href="https://www.google.com/calendar/render?action=TEMPLATE&text=Lahiru+%26+Shanika+Wedding&dates=20261210T033000Z/20261210T063000Z&details=We+are+excited+to+celebrate+with+you!&location=Holy+Cross+Church&sf=true&output=xml" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="w-full group relative flex items-center justify-center overflow-hidden rounded-full border border-[#B5294E]/30 bg-[#B5294E]/5 transition-all duration-300 hover:bg-[#B5294E] py-4 hover:border-[#B5294E]"

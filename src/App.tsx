@@ -20,6 +20,7 @@ import { IntroOverlay } from './components/IntroOverlay';
 import { HeroContent } from './components/HeroContent';
 import { CornerFlowers } from './components/CornerFlowers';
 import { Admin } from './components/Admin';
+import { WEDDING } from './weddingConfig';
 
 export default function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -31,8 +32,7 @@ export default function App() {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  // 9:00 AM Sri Lanka time (UTC+05:30)
-  const weddingDate = new Date('2026-12-14T09:00:00+05:30');
+  const weddingDate = new Date(WEDDING.dateISO);
 
   const startMusic = () => {
     if (audioRef.current && !isMusicPlaying) {

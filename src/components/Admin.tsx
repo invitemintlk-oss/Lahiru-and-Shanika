@@ -104,7 +104,7 @@ export const Admin: React.FC = () => {
       <div className="max-w-2xl w-full bg-white rounded-3xl shadow-xl p-6 sm:p-8 border border-[#B5294E]/20">
         <h1 className="text-2xl sm:text-3xl font-serif text-center mb-2 text-[#1F3D2B]">Wedding Invitation Link Generator</h1>
         <p className="text-center text-sm text-stone-500 mb-8">
-          {WEDDING.brideName} &amp; {WEDDING.groomName}
+          {WEDDING.groomName} &amp; {WEDDING.brideName}
         </p>
 
         <form onSubmit={handleGenerate} className="space-y-6">

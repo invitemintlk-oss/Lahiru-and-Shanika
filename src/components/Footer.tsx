@@ -1,9 +1,10 @@
 import React from 'react';
 import { Heart } from 'lucide-react';
+import { COUPLE_NAMES, WEDDING } from '../weddingConfig';
 
 export const Footer: React.FC = () => {
-  const dateText = "14th December 2026";
-  const locationText = "Dumindu Hotel & Banquet Hall, Kekanadura, Matara";
+  const dateText = `${WEDDING.dateLong} · ${WEDDING.time}`;
+  const locationText = WEDDING.venue;
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -20,7 +21,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
               <Heart className="h-8 w-8 text-[#F4B6C6] opacity-90 fill-transparent" strokeWidth={1} />
-              <span className="text-4xl lg:text-5xl font-display text-[#F4B6C6] drop-shadow-sm" style={{ fontFamily: "'Great Vibes', cursive" }}>T &amp; I</span>
+              <span className="text-4xl lg:text-5xl font-display text-[#F4B6C6] drop-shadow-sm" style={{ fontFamily: "'Great Vibes', cursive" }}>L &amp; S</span>
             </div>
             <p className="text-white/70 leading-[1.8] font-serif text-justify tracking-wide text-sm md:text-base pr-4">
               Thank you for visiting our wedding website and being part of our love story. The honor of your presence would mean the world to us.
@@ -60,7 +61,7 @@ export const Footer: React.FC = () => {
             <div className="space-y-3 text-white/70 font-sans tracking-[0.1em] text-sm">
               <p>{dateText}</p>
               <p>{locationText}</p>
-              <p className="text-[#F4B6C6] italic mt-4 font-serif tracking-widest text-xs opacity-80">#Tashini&amp;Ishan2026</p>
+              <p className="text-[#F4B6C6] italic mt-4 font-serif tracking-widest text-xs opacity-80">{WEDDING.hashtag}</p>
             </div>
           </div>
 
@@ -73,7 +74,7 @@ export const Footer: React.FC = () => {
             <div className="w-8 h-[1px] bg-gradient-to-l from-transparent to-[#F4B6C6]/50"></div>
           </div>
           <p className="text-[#F4B6C6]/70 text-[10px] md:text-xs font-sans tracking-[0.2em] uppercase">
-            © 2026 Tashini &amp; Ishan's Wedding
+            © 2026 {COUPLE_NAMES}'s Wedding
           </p>
           <p className="text-white/40 text-[10px] mt-4 font-sans tracking-[0.1em]">
             Want a beautiful wedding website like this? Create yours with <a target="_blank" rel="noreferrer" className="text-[#F4B6C6] hover:text-white transition-colors underline underline-offset-2" href="https://wa.me/94707819074">invitemint</a>

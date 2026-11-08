@@ -1,8 +1,8 @@
 /**
- * Tashini & Ishan – Wedding RSVP + Wishes → Google Sheets
+ * Lahiru & Shanika – Wedding RSVP + Wishes → Google Sheets
  *
  * Spreadsheet:
- * https://docs.google.com/spreadsheets/d/19MNudHJ9LmmS_Ob0t3EqRjtVu-5YEdQ1sPz-ReorPUo/edit
+ * https://docs.google.com/spreadsheets/d/1daNtGADlJ-ahcs39qrkvDXMwtt68kxMSS-PwAuu1H0s/edit
  *
  * SETUP
  * 1. Open the spreadsheet → Extensions → Apps Script.
@@ -13,13 +13,17 @@
  *      Execute as: Me
  *      Who has access: Anyone
  *    → Deploy, then copy the Web app URL (ends with /exec).
- * 5. Paste that URL into GOOGLE_SCRIPT_URL in src/googleSheets.ts and redeploy the website.
+ * 5. Paste that URL into GOOGLE_SCRIPT_URL in src/googleSheets.ts (or set VITE_GOOGLE_SCRIPT_URL
+ *    in Vercel → Settings → Environment Variables) and redeploy the website.
+ *
+ * The "RSVP" and "Wishes" tabs are created automatically, with styled headers, on the first
+ * submission (or when you run setupSheets). Missing headers are re-added if a tab is cleared.
  *
  * If you edit this script later, use Deploy → Manage deployments → Edit → Version: New version
  * so the same /exec URL picks up the change.
  */
 
-const SPREADSHEET_ID = '19MNudHJ9LmmS_Ob0t3EqRjtVu-5YEdQ1sPz-ReorPUo';
+const SPREADSHEET_ID = '1daNtGADlJ-ahcs39qrkvDXMwtt68kxMSS-PwAuu1H0s';
 const TIMEZONE = 'Asia/Colombo';
 
 // Each form gets its own tab, created automatically with these headers.
@@ -95,7 +99,7 @@ function doPost(e) {
 function doGet(e) {
   const action = String((e && e.parameter && e.parameter.action) || '').toLowerCase();
   if (action === 'health') {
-    return json_({ ok: true, service: 'tashini-ishan-wedding-forms', time: new Date().toISOString() });
+    return json_({ ok: true, service: 'lahiru-shanika-wedding-forms', time: new Date().toISOString() });
   }
   return json_({ ok: true, message: 'POST with sheet=rsvp|wishes and payload=<json>' });
 }

@@ -6,6 +6,7 @@ import { FloatingPetals } from './components/FloatingPetals';
 import { Countdown } from './components/Countdown';
 import { HomecomingDetails } from './components/HomecomingDetails';
 import { FamilyBlessing } from './components/FamilyBlessing';
+import { ThemeQuote } from './components/ThemeQuote';
 import { Timeline } from './components/Timeline';
 
 import { NoteFromUs } from './components/NoteFromUs';
@@ -139,6 +140,10 @@ export default function App() {
             <SectionDivider />
 
             <FamilyBlessing />
+
+            <SectionDivider />
+
+            <ThemeQuote />
 
             <SectionDivider />
 

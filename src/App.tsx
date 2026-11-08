@@ -13,6 +13,7 @@ import { NoteFromUs } from './components/NoteFromUs';
 import { RSVPForm } from './components/RSVPForm';
 import { WishesSection } from './components/WishesSection';
 import { Footer } from './components/Footer';
+import { SectionDivider } from './components/SectionDivider';
 import { IntroVideo } from './components/IntroVideo';
 import { IntroOverlay } from './components/IntroOverlay';
 
@@ -129,24 +130,41 @@ export default function App() {
 
             <HeroContent />
 
-            <Countdown targetDate={weddingDate} />
+            <SectionDivider />
 
+            <div className="bg-[#FCEEF2]/60">
+              <Countdown targetDate={weddingDate} />
+            </div>
 
-
+            <SectionDivider />
 
             <FamilyBlessing />
 
-            <HomecomingDetails />
+            <SectionDivider />
+
+            <div className="bg-[#FCEEF2]/60">
+              <HomecomingDetails />
+            </div>
+
+            <SectionDivider />
 
             <Timeline />
 
+            <SectionDivider />
 
+            <div className="bg-[#FCEEF2]/60">
+              <NoteFromUs />
+            </div>
 
-            <NoteFromUs />
+            <SectionDivider />
 
             <RSVPForm />
 
-            <WishesSection />
+            <SectionDivider />
+
+            <div className="bg-[#FCEEF2]/60">
+              <WishesSection />
+            </div>
 
             <Footer />
           </motion.main>

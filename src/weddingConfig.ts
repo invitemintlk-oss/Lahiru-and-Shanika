@@ -18,6 +18,16 @@ export const WEDDING = {
   // Exact pin of Holy Cross Church (7.1947130, 79.8339840) – opens the Google Maps app on phones.
   mapUrl: 'https://www.google.com/maps/search/?api=1&query=7.1947130%2C79.8339840',
 
+  // Wedding party / reception – Sunday, 13th December 2026 from 7:30 PM
+  party: {
+    weekday: 'Sunday',
+    dateLong: '13th December 2026',
+    time: '7:30 PM',
+    venue: 'St. Joseph Reception Hall',
+    // Exact pin of St. Joseph Reception Hall (7.19862666, 79.83267744) – opens the Google Maps app on phones.
+    mapUrl: 'https://www.google.com/maps/search/?api=1&query=7.19862666%2C79.83267744',
+  },
+
   themeVerse:
     'මෙසේ ඔවුන් එවක් පටන් දෙදෙනකු නොව එකකෙනෙකු වෙති. එබැවින් දෙවියන් එක් කල අය මිනිසා විසින් වෙන් නොකෙරේවා',
   themeReference: 'මතෙව් 19:6',

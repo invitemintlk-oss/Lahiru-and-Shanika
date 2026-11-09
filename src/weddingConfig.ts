@@ -15,8 +15,8 @@ export const WEDDING = {
   time: '9:00 AM',
 
   venue: 'Holy Cross Church',
-  mapUrl:
-    'https://maps.google.com/maps/search/Holy%20Cross%20Church/@7.194713115692139,79.833984375,17z?hl=en',
+  // Exact pin of Holy Cross Church (7.1947130, 79.8339840) – opens the Google Maps app on phones.
+  mapUrl: 'https://www.google.com/maps/search/?api=1&query=7.1947130%2C79.8339840',
 
   themeVerse:
     'මෙසේ ඔවුන් එවක් පටන් දෙදෙනකු නොව එකකෙනෙකු වෙති. එබැවින් දෙවියන් එක් කල අය මිනිසා විසින් වෙන් නොකෙරේවා',
